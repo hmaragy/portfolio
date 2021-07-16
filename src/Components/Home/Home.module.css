@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+
+.header__text {
+  text-align: center;
+  background: var(--color-primary-light);
+  color: var(--color-secondary);
+  -webkit-clip-path: polygon(0 5%, 100% 4rem, 85% 100%, 10% 85%);
+  clip-path: polygon(0 5%, 100% 4rem, 85% 100%, 10% 85%);
+  z-index: 100;
+  margin-top: 4rem;
+}
+.pad-text {
+  padding: 2rem;
+}
+.header__text--main {
+  font-family: "Miniver", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+.header__text--sub {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.header__hero {
+  text-align: center;
+}
+
+.rotate-container {
+  width: 150px;
+  height: 10rem;
+  position: relative;
+  transform-style: preserve-3d;
+  margin: 2rem auto;
+  transition: 1s all;
+  z-index: 100;
+}
+.rotate-container:hover {
+  transform: rotateY(180deg);
+}
+.front-image,
+.back-image {
+  width: 100%;
+  cursor: pointer;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  backface-visibility: hidden;
+}
+.back-image {
+  transform: rotateY(180deg) translateX(50%);
+}
+.front-image img,
+.back-image img {
+  max-width: 100%;
+}
+
+.header__basic-info {
+  color: var(--color-secondary);
+  text-align: left;
+  width: 27rem;
+  margin: 2rem auto;
+}
+.header__basic-info p {
+  margin: 1.2rem 0;
+  font-size: 1.3rem;
+}

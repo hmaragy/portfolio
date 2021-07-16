@@ -1,0 +1,7 @@
+.particles {
+  position: absolute;
+  top: 15rem;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+}

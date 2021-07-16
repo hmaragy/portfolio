@@ -1,0 +1,33 @@
+.nav {
+  background: var(--nav-bg);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list-item {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.nav__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 0.5rem;
+  font-size: 1rem;
+  border-bottom: 0.2rem solid transparent;
+}
+.nav__link:hover,
+.nav__link--active {
+  color: var(--color-secondary-dark);
+  border-bottom: 0.2rem solid var(--color-secondary-dark);
+}
