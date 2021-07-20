@@ -6,6 +6,7 @@
 .footer-container {
   max-width: 70rem;
   margin: auto;
+  padding: 2rem;
 }
 .footer__arrow-up {
   position: absolute;
@@ -32,6 +33,7 @@
 }
 
 .footer__copy {
+  position: relative;
+  z-index: 100;
   color: var(--color-secondary);
-  padding: 2rem;
 }
