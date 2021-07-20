@@ -27,19 +27,20 @@
 
 .project__head {
   display: grid;
-  grid-template-columns: 3.3rem 1fr 2rem;
+  grid-template-columns: 4.3rem 1fr 3rem;
   align-items: center;
+  align-content: center;
   justify-items: center;
   background-color: var(--color-secondary);
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 .project__controls {
   display: flex;
   gap: 0.3rem;
 }
 .project__controls div {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
 }
 .project__controls--red {
@@ -55,12 +56,10 @@
   color: var(--color-primary);
   opacity: 0.8;
 }
-.project__info {
-  align-self: end;
-}
 .project__info button {
+  display: flex;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border: none;
   background-color: transparent;
   transition: all 0.2s;
