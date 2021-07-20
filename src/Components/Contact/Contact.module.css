@@ -1,0 +1,38 @@
+.contact-section {
+  padding-top: 4rem;
+}
+
+.contact_buttons {
+  margin-top: 3rem;
+
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact_buttons a {
+  text-decoration: none;
+  display: inline-block;
+
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 2rem;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact_buttons span {
+  display: inline-block;
+}
+.contact_buttons a:hover {
+  transform: translateY(-2px);
+}
+.contact_buttons a:active {
+  transform: translateY(1px);
+}

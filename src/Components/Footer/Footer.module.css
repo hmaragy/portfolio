@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 8rem;
+  background-color: var(--color-primary-light);
+  position: relative;
+}
+.footer-container {
+  max-width: 70rem;
+  margin: auto;
+}
+.footer__arrow-up {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s all;
+  border-radius: 50%;
+
+  font-size: 2rem;
+  color: var(--color-secondary);
+
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+}
+.footer__arrow-up > * {
+  display: block;
+  margin-top: -1.5rem;
+  color: inherit;
+  padding: 3rem 2.5rem;
+}
+.footer__arrow-up:hover {
+  transform: translate(-50%, -5px);
+}
+
+.footer__copy {
+  color: var(--color-secondary);
+  padding: 2rem;
+}

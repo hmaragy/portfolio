@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap");
 
+.header {
+  padding-top: 4rem;
+}
 .header__text {
   text-align: center;
   background: var(--color-primary-light);
@@ -7,24 +10,33 @@
   -webkit-clip-path: polygon(0 5%, 100% 4rem, 85% 100%, 10% 85%);
   clip-path: polygon(0 5%, 100% 4rem, 85% 100%, 10% 85%);
   z-index: 100;
-  margin-top: 4rem;
 }
 .pad-text {
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 .header__text--main {
-  font-family: "Miniver", cursive;
+  font-family: "Encode Sans SC", sans-serif;
   font-size: 4rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
+  font-weight: 100;
+  letter-spacing: 1.5rem;
 }
 .header__text--sub {
-  font-size: 3rem;
+  margin-top: 2rem;
+  font-size: 2.2rem;
   font-weight: 200;
 }
 
 .header__hero {
   text-align: center;
+}
+
+@media screen and (max-width: 52em) {
+  .header__text--main {
+    font-size: 2.5rem;
+  }
+  .header__text--sub {
+    font-size: 1.5rem;
+  }
 }
 
 .rotate-container {
@@ -43,6 +55,7 @@
 .back-image {
   width: 100%;
   cursor: pointer;
+  height: 150px;
 
   position: absolute;
   left: 50%;
@@ -54,16 +67,25 @@
 }
 .front-image img,
 .back-image img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .header__basic-info {
   color: var(--color-secondary);
   text-align: left;
-  width: 27rem;
-  margin: 2rem auto;
+  max-width: 25rem;
+  margin: 2rem auto 0 auto;
 }
 .header__basic-info p {
   margin: 1.2rem 0;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 45em) {
+  .header__basic-info {
+    margin: 6rem auto 0 auto;
+    max-width: 40rem;
+  }
 }

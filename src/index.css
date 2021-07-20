@@ -8,6 +8,13 @@
 
 html {
   font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+@media screen and (max-width: 45em) {
+  html {
+    font-size: 80%;
+  }
 }
 
 :root {
@@ -21,4 +28,5 @@ html {
 
 body {
   background: var(--color-primary);
+  overflow-x: hidden;
 }

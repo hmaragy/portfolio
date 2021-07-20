@@ -1,0 +1,25 @@
+.skills-section {
+  padding-top: 4rem;
+}
+
+.skills-list {
+  max-width: 40rem;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.skills-list__item {
+  width: 5rem;
+  list-style: none;
+  text-align: center;
+}
+
+.skills-list__link img {
+  max-width: 100%;
+}
